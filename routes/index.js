@@ -62,7 +62,7 @@ router.get('/startblink', (req, res, next) => {
     } else {
       api.setLightState(1, { on: false });
     }
-  }, 8000);
+  }, 12000);
 
   /* MongoDB  */
   /* let ip = req.ip;

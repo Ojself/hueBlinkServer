@@ -26,6 +26,14 @@ const debug = require('debug')(
 );
 
 const app = express();
+const cors = require('cors');
+
+app.use(
+  cors({
+    credentials: true,
+    origin: [`https://89.14.24.193:2525`]
+  })
+);
 
 // Middleware Setup
 app.use(logger('dev'));
